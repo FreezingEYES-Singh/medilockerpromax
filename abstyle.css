@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Foldit:wght@500&family=Workbench&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Foldit:wght@500&family=Workbench&display=swap');
+#adiv{
+    height:100%;
+    width:100%;
+    padding-left:3%;
+    padding-right:3%;
+    padding-top:3%;
+    padding-bottom:3%;
+    text-decoration: none;
+
+}
+
+.main{
+    overflow:hidden;
+}
+
+#adiv h1{
+    font-family: Honk;
+    font-size: 60px;
+    width:100%;
+}
+
+.main{
+    display: flex;
+    overflow-y: scroll;
+}
+
+.e2{
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: cover;
+  animation: gradient 15s ease infinite;
+      overflow-y: scroll;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+html{
+     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  animation: gradient 15s ease infinite;
+  background-size:cover;
+  background-repeat:no-repeat;
+  
+}
+
+.everything{
+  overflow:scroll;
+} 
+
+#adiv::-webkit-scrollbar{
+    display:none;
+}
+
+#adiv .p1 span{
+    display:inline;
+    width:60px;
+    font-size:15px;
+    font-weight:100px;
+    color:white;
+    text-shadow:0 0 15px aqua,0 0 20px aqua,0 0 25px aqua,0 0 15px aqua,0 0 20px aqua,0 0 25px aqua;
+    padding-right:5px;
+    padding-left:2%;
+}
+
+.p1{
+    font-family:Workbench;
+    color:white;
+    font-size:15px;
+    text-shadow:0 0 15px #f0f,0 0 20px #f0f,0 0 25px #f0f,0 0 15px #f0f,0 0 20px #f0f,0 0 25px #f0f;
+    display:flex;
+    justify-content: left;
+}
+
+/*@keyframes glow {*/
+/*    0%{*/
+/*        text-shadow:0 0 15px #f0f,0 0 20px #f0f,0 0 25px #f0f,0 0 15px #f0f,0 0 20px #f0f,0 0 25px #f0f;*/
+/*    }*/
+/*    50%{*/
+/*        text-shadow:0 0 15px #f0f,0 0 25px #f0f,0 0 35px #f0f,0 0 45px #f0f;*/
+/*    }*/
+/*    100%{*/
+/*        text-shadow:0 0 15px #f0f,0 0 20px #f0f,0 0 25px #f0f,0 0 15px #f0f,0 0 20px #f0f,0 0 25px #f0f;*/
+/*    }*/
+/*}*/
+
+.p2{
+    font-family:DM Serif Display;
+    display:flex;
+    justify-content:center;
+    font-size:25px;
+    font-weight:80px;
+    color:white;
+    text-shadow:0 0 15px aqua,0 0 20px aqua,0 0 25px aqua,0 0 15px aqua,0 0 20px aqua,0 0 25px aqua;
+    overflow: scroll;
+    width:100%;
+    padding-bottom:50px;
+    
+}
+
+.p2 span{
+    text-shadow:0 0 15px #f0f,0 0 20px #f0f,0 0 25px #f0f,0 0 15px #f0f,0 0 20px #f0f,0 0 25px #f0f;
+    color:red;
+    display:flex;
+    font-weight:bold;
+}
+
+.p2::-webkit-scrollbar{
+    display:none;
+}

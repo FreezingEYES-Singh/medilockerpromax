@@ -1,0 +1,219 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.sidebar {
+  position: fixed;
+  height:100%;
+  width: 260px;
+  background: #11101d;
+  padding: 15px;
+  z-index: 99;
+}
+.logo {
+  font-size: 25px;
+  padding: 0 15px;
+}
+.sidebar a {
+  color: #fff;
+  text-decoration: none;
+}
+.menu-content {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin-top: 40px;
+}
+.menu-content::-webkit-scrollbar {
+  display: none;
+}
+.menu-items {
+    overflow:hidden;
+    height:100%;
+  width: 100%;
+  list-style: none;
+  transition: all 0.4s ease;
+}
+.submenu-active .menu-items {
+  transform: translateX(-56%);
+}
+.menu-title {
+  color: #fff;
+  font-size: 14px;
+  padding: 15px 20px;
+}
+.item a,
+.submenu-item {
+  padding: 16px;
+  display: inline-block;
+  width: 100%;
+  border-radius: 12px;
+}
+.item i {
+  font-size: 12px;
+}
+.item a:hover,
+.submenu-item:hover,
+.submenu .menu-title:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+.submenu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+}
+.submenu {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: calc(-100% - 26px);
+  height: calc(100% + 100vh);
+  background: #11101d;
+  display: none;
+}
+.show-submenu ~ .submenu {
+  display: block;
+}
+.submenu .menu-title {
+  border-radius: 12px;
+  cursor: pointer;
+}
+.submenu .menu-title i {
+  margin-right: 10px;
+}
+.navbar,
+.main {
+  left: 260px;
+  width: calc(100% - 260px);
+  transition: all 0.5s ease;
+  z-index: 1000;
+}
+.sidebar.close ~ .navbar,
+.sidebar.close ~ .main {
+  left: 0;
+  width: 100%;
+}
+.navbar {
+  position: fixed;
+  color: #fff;
+  padding: 15px 20px;
+  font-size: 25px;
+  background: transparent;
+  cursor: pointer;
+}
+.navbar #sidebar-close {
+  cursor: pointer;
+}
+.main {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  z-index: 100;
+  background: #e7f2fd;
+}
+.main h1 {
+  color: #11101d;
+  font-size: 40px;
+  text-align: center;
+}
+
+.tltext {
+  position: relative;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+.tltext li {
+  list-style: none;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  color: #484848;
+  text-shadow: none;
+  animation: ttanimation 1s infinite linear;
+}
+@keyframes ttanimation {
+  0% {
+    color: #484848;
+    text-shadow: none;
+  }
+  18% {
+    color: #484848;
+    text-shadow: none;
+  }
+  20% {
+    color: #fff900;
+    text-shadow: 0 0 7px #fff900, 0 0 20px #ff6c00;
+  }
+  30% {
+    color: #484848;
+    text-shadow: none;
+  }
+  35% {
+    color: #fff900;
+    text-shadow: 0 0 7px #fff900, 0 0 20px #ff6c00;
+  }
+  70% {
+    color: #484848;
+    text-shadow: none;
+  }
+  85% {
+    color: #fff900;
+    text-shadow: 0 0 7px #fff900, 0 0 20px #ff6c00;
+  }
+  90% {
+    color: #484848;
+    text-shadow: none;
+  }
+  100% {
+    color: #484848;
+    text-shadow: none;
+  }
+}
+.tltext li:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.tltext li:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.tltext li:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.tltext li:nth-child(4) {
+  animation-delay: 0.8s;
+}
+.tltext li:nth-child(5) {
+  animation-delay: 1s;
+}
+.tltext li:nth-child(6) {
+  animation-delay: 1.2s;
+}
+.tltext li:nth-child(7) {
+  animation-delay: 1.4s;
+}
+.tltext li:nth-child(8) {
+  animation-delay: 1.6s;
+}
+.tltext li:nth-child(9) {
+  animation-delay: 1.8s;
+}
+
+.WB {
+  color: #ff6c00;
+  position: relative;
+  border-bottom: 3px red;
+}
+

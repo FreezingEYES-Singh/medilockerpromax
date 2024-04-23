@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #03080a;
+}
+
+.containercf {
+  width: 100%;
+  padding: 20px;
+}
+
+.containercf h2 {
+  width: 100%;
+  color: #45f3ff;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.containercf .row100 {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.containercf .row100 .col {
+  position: relative;
+  width: 100%;
+  padding: 30px 0 10px;
+  transition: 0.5s;
+}
+
+.containercf .row100 .inputBoxcf {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  color: #45f3ff;
+}
+
+.containercf .row100 .inputBoxcf input,
+.containercf .row100 .inputBoxcf.textarea textarea {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding: 0 10px;
+  z-index: 1;
+  color: #000;
+}
+
+.containercf .row100 .inputBoxcf .textcf {
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 40px;
+  font-size: 18px;
+  padding: 0 10px;
+  display: block;
+  transition: 0.5s;
+  pointer-events: none;
+}
+.containercf .row100 .inputBoxcf input:focus + .textcf,
+.containercf .row100 .inputBoxcf input:valid + .textcf {
+  top: -35px;
+  left: -10px;
+}
+
+.containercf .row100 .inputBoxcf .linecf {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #45f3ff;
+  transition: 0.5s;
+  border-radius: 2px;
+  pointer-events: none;
+}
+.containercf .row100 .inputBoxcf input:focus ~ .linecf,
+.containercf .row100 .inputBoxcf input:valid ~ .linecf {
+  height: 100%;
+}
+
+.containercf .row100 .inputBoxcf.textarea {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  padding: 10px 0;
+}
+
+.containercf .row100 .inputBoxcf.textarea textarea {
+  height: 100%;
+  resize: none;
+}
+
+.containercf .row100 .inputBoxcf textarea:focus + .textcf,
+.containercf .row100 .inputBoxcf textarea:valid + .textcf {
+  top: -35px;
+  left: -10px;
+}
+
+.containercf .row100 .inputBoxcf textarea:focus ~ .linecf,
+.containercf .row100 .inputBoxcf textarea:valid ~ .linecf {
+  height: 100%;
+}
+
+input[type="submit"] {
+  border: none;
+  padding: 7px 35px;
+  cursor: pointer;
+  outline: none;
+  background: #45f3ff;
+  color: #000;
+  font-size: 18px;
+  border-radius: 2px;
+}
+
+.col1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

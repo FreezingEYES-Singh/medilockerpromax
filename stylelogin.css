@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #222;
+}
+.login_container {
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  grid-gap: 4px;
+}
+.login_container .box {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background: rgba(45, 45, 45, 1);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: all;
+}
+
+.login_container .box::before {
+  content: "";
+  position: absolute;
+  top: var(--y);
+  left: var(--x);
+  transform: translate(-50%, -50%);
+  background: radial-gradient(var(--clr), transparent, transparent);
+  width: 300px;
+  height: 300px;
+  transition: 0.5s, top 0.1s, left 0.1s;
+  pointer-events: all;
+}
+
+.login_container .box::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background-color: rgba(0, 0, 0, 0.9);
+  pointer-events: all;
+}
+
+.login {
+  position: absolute;
+  width: 450px;
+  height: 600px;
+  padding: 0 40px;
+  text-align: center;
+  pointer-events: none;
+}
+
+.login2 {
+  padding: 60px 40px;
+}
+
+.box {
+  pointer-events: all;
+}
+
+.login h2 {
+  color: #fff;
+  font-size: 2em;
+  margin-bottom: 60px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  pointer-events: all;
+}
+
+.login .inputBox {
+  position: relative;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.login .inputBox input {
+  width: 100%;
+  padding: 20px 25px;
+  outline: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+  border: 1px solid #000;
+  backdrop-filter: blur(10px);
+  color: #fff;
+  font-size: 1em;
+  text-transform: none;
+  letter-spacing: 0.1em;
+  pointer-events: all;
+}
+
+.login .inputBox span {
+  position: absolute;
+  left: 0;
+  font-size: 1em;
+  padding: 20px 20px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-radius: 4px;
+  transition: 0.25s;
+  pointer-events: all;
+}
+.login .inputBox input:focus ~ span,
+.login .inputBox input:valid ~ span {
+  transform: translate(15px, -10px);
+  font-size: 0.75em;
+  background: #fff;
+  color: #222;
+  padding: 2px 3px;
+  border: 1px solid #000;
+}
+
+.login .inputBox button[type="submit"] {
+  background: #0f0;
+  height: 55px;
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: 500;
+  transition: 0.25s;
+}
+
+.login .inputBox button[type="submit"]:hover {
+  color: #222;
+  border: 1px solid transparent;
+  box-shadow: 0 0 2px #0f0, 0 0 5px #0f0, 0 0 10px #0f0, 0 0 15px #0f0,
+    0 0 20px #0f0, 0 0 30px #0f0, 0 0 50px #0f0;
+}
+
+.group {
+  position: relative;
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  pointer-events: all;
+}
+
+.group a {
+  color: #222;
+  background: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  border-radius: 4px;
+  pointer-events: all;
+}
+
+.group a:nth-child(1) {
+  background: #f0f;
+  color: #fff;
+  font-weight: 500;
+  box-shadow: 0 0 15px #f0f;
+  transition: 0.5s;
+}
+.group a:nth-child(1):hover {
+  background: #f0f;
+  color: aqua;
+  font-weight: bold;
+  box-shadow: 0 0 15px #f0f, 0 0 30px #f0f, 0 0 60px #f0f;
+}
+
+.group a:nth-child(2) {
+  background: aqua;
+  color: #fff;
+  font-weight: 500;
+  box-shadow: 0 0 15px aqua;
+  transition: 0.5s;
+}
+.group a:nth-child(2):hover {
+  background: aqua;
+  color: #f0f;
+  font-weight: bold;
+  box-shadow: 0 0 15px aqua, 0 0 30px aqua, 0 0 60px aqua;
+}
+
+.lbtn {
+  cursor: pointer;
+  pointer-events: all;
+}

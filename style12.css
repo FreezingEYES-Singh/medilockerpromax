@@ -1,0 +1,74 @@
+.et2 div {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px;
+  padding: 10px;
+  flex: none;
+}
+
+.et2 div img {
+  width: 70%;
+  filter: grayscale(100%);
+  transition: 0.5s;
+}
+
+.et2 {
+  width: 500px;
+  display: flex;
+  overflow-x: scroll;
+  transition: 0.5s;
+}
+
+.et2::-webkit-scrollbar {
+  display: none;
+}
+
+.everything2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10% auto;
+}
+
+.et2 div img:hover {
+  filter: grayscale(0);
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.et2 div span {
+  justify-content: center;
+  text-align: center;
+}
+
+#del1 {
+  text-align: center;
+  position: relative;
+  display: block;
+}
+
+.hide {
+  visibility: hidden;
+}
+.everything {
+    padding-top: 15%;
+}
+
+.navbar{
+    background:transparent;
+    
+}
+
+.upld{
+position:absolute;
+z-index: 1000000000;
+height:40vh;
+width: 90%;
+top: auto;
+left: auto;
+background-color: #000;
+border: 5px dashed white;
+border-radius: 30px;
+    
+}

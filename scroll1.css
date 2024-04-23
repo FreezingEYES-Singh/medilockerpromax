@@ -1,0 +1,15 @@
+.menu-items,.sidebar,.main,.everything{
+    overflow:scroll;
+}
+
+.menu-items::-webkit-scrollbar,.sidebar::-webkit-scrollbar,.main::-webkit-scrollbar,.everything::-webkit-scrollbar{
+    display:none;
+}
+
+.sidebar{
+    height:100vh;
+}
+
+.main{
+    background:#222;
+}
